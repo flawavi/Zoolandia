@@ -12,6 +12,15 @@ namespace Zoolandia.Animals
         public int numOfLimbs = 4;
         public string domain = "forest";
         public string brainSize = "large";
+        public override string eat()
+        {
+            string parentMessage = base.eat();
+            return $"Jeremy is eating a platter full of creepy crawlies. Times are hard.";
+        }
+        public Pan_paniscus()
+        {
+            this.name = "Jeremy";
+        }
     }
 }
 

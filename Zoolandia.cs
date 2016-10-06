@@ -8,21 +8,21 @@ namespace Zoolandia.Animals
         public int height {get;set;}
         public int weight {get;set;}
         public DateTime birthDate {get;set;}
-        public static void sleep()
+        public static string sleep()
         {
-            Console.WriteLine("Animal is sleeping now.");
+            return "Animal is sleeping now.";
         }
-        public static void eat()
+        public virtual string eat()
         {
-            Console.WriteLine("Animal is eating now.");
+            return "Animal is eating now.";
         }
-        public static void play()
+        public static string play()
         {
-            Console.WriteLine("Animal is playing now.");
+            return "Animal is playing now.";
         }
-        public static void speak()
+        public static string speak()
         {
-            Console.WriteLine("Animal is speaking.");
+            return "Animal is speaking.";
         }
     }
 }

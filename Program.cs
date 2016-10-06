@@ -35,6 +35,15 @@ namespace Zoolandia
             Console.WriteLine("I have a bonobo named {0}. He was born on {1}. He is {2}ft tall and weighs {3}lbs. Don't fuck with him.", bonobo.name, bonobo.birthDate, bonobo.height, bonobo.weight);
             Console.WriteLine("I have an red panda named {0}. He was born on {1}. He is {2}ft tall and weighs {3}lbs. Don't fuck with him.", redPanda.name, redPanda.birthDate, redPanda.height, redPanda.weight);
             Console.WriteLine("I have an dolphin named {0}. He was born on {1}. He is {2}ft tall and weighs {3}lbs. Don't fuck with him.", dolphin.name, dolphin.birthDate, dolphin.height, dolphin.weight);
+            
+            Haliaeetus_leucocephalus Eagle = new Haliaeetus_leucocephalus();
+            Console.WriteLine(Eagle.name);
+            Ailurus_fulgens RedPanda = new Ailurus_fulgens();
+            Console.WriteLine(RedPanda.name);
+            Pan_paniscus Bonobo = new Pan_paniscus();
+            Console.WriteLine(Bonobo.name);
+            Delphinapterus_leucas Dolphin = new Delphinapterus_leucas();
+            Console.WriteLine(Dolphin.name);
         }
     }
 }
