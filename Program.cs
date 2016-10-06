@@ -1,0 +1,40 @@
+﻿using System;
+using Zoolandia.Animals;
+
+namespace Zoolandia
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Animal eagle = new Haliaeetus_leucocephalus();
+            eagle.birthDate = Convert.ToDateTime("10/06/2016");
+            eagle.height = 1;
+            eagle.weight = 1;
+            eagle.name = "Jerome";
+
+            Animal bonobo = new Pan_paniscus();
+            bonobo.birthDate = Convert.ToDateTime("01/01/2000");
+            bonobo.height = 3;
+            bonobo.weight = 50;
+            bonobo.name = "Jeremy";
+
+            Animal redPanda = new Ailurus_fulgens();
+            redPanda.birthDate = Convert.ToDateTime("02/02/2002");
+            redPanda.height = 2;
+            redPanda.weight = 25;
+            redPanda.name = "Jerrod";
+
+            Animal dolphin = new Delphinapterus_leucas();
+            dolphin.birthDate = Convert.ToDateTime("06/06/2006");
+            dolphin.height = 5;
+            dolphin.weight = 3000;
+            dolphin.name = "Jerluga";
+
+            Console.WriteLine("I have an eagle named {0}. He was born on {1}. He is {2}ft tall and weighs {3}lbs. Don't fuck with him.", eagle.name, eagle.birthDate, eagle.height, eagle.weight);
+            Console.WriteLine("I have a bonobo named {0}. He was born on {1}. He is {2}ft tall and weighs {3}lbs. Don't fuck with him.", bonobo.name, bonobo.birthDate, bonobo.height, bonobo.weight);
+            Console.WriteLine("I have an red panda named {0}. He was born on {1}. He is {2}ft tall and weighs {3}lbs. Don't fuck with him.", redPanda.name, redPanda.birthDate, redPanda.height, redPanda.weight);
+            Console.WriteLine("I have an dolphin named {0}. He was born on {1}. He is {2}ft tall and weighs {3}lbs. Don't fuck with him.", dolphin.name, dolphin.birthDate, dolphin.height, dolphin.weight);
+        }
+    }
+}
