@@ -5,6 +5,7 @@ namespace Zoolandia.Animals
     class Delphinapterus_leucas: Animal
     {
         public bool canSwim = true;
+        public int age = 0;
         public bool canWalk = false;
         public bool canFly = false;
         public bool canClimb = false;
@@ -20,6 +21,24 @@ namespace Zoolandia.Animals
         public Delphinapterus_leucas()
         {
             this.name = "Jerluga";
+        }
+        public Delphinapterus_leucas(string args)
+        {
+            string name = args;
+        }
+        public Delphinapterus_leucas(int args)
+        {
+            this.age = args;
+        }
+        public Delphinapterus_leucas(string[] args)
+        {
+            this.age = Convert.ToInt16(args[0]);
+            this.name = args[1];
+        }
+        public Delphinapterus_leucas(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
         }
     }
 }

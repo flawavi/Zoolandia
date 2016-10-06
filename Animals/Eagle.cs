@@ -5,6 +5,7 @@ namespace Zoolandia.Animals
     class Haliaeetus_leucocephalus: Animal
     {
         public int wingspan = 1;
+        public int age = 0;
         public bool canFly = true;
         public bool canSwim = true;
         public bool canWalk = true;
@@ -21,6 +22,19 @@ namespace Zoolandia.Animals
         public Haliaeetus_leucocephalus()
         {
             this.name = "Jerome";
+        }
+        public Haliaeetus_leucocephalus(string args)
+        {
+            string name = args;
+        }
+        public Haliaeetus_leucocephalus(int args)
+        {
+            this.age = args;
+        }
+        public Haliaeetus_leucocephalus(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
         }
     }
 }

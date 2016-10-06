@@ -5,6 +5,7 @@ namespace Zoolandia.Animals
     class Ailurus_fulgens: Animal
     {
         public bool omnivore = true;
+        public int age = 0;
         public bool canSwim = false;
         public bool canWalk = true;
         public bool canFly = false;
@@ -21,6 +22,24 @@ namespace Zoolandia.Animals
         public Ailurus_fulgens()
         {
             this.name = "Jerrod";
+        }
+        public Ailurus_fulgens(string args)
+        {
+            string name = args;
+        }
+        public Ailurus_fulgens(int args)
+        {
+            this.age = args;
+        }
+        public Ailurus_fulgens(string[] args)
+        {
+            this.age = Convert.ToInt16(args[0]);
+            this.name = args[1];
+        }
+        public Ailurus_fulgens(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
         }
     }
 }
