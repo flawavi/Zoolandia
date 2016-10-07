@@ -31,6 +31,8 @@ namespace Zoolandia
             dolphin.weight = 3000;
             dolphin.name = "Jerluga";
 
+            Animal turtle = new Chelonoidis_nigra
+
             // Console.WriteLine("I have an eagle named {0}. He was born on {1}. He is {2}ft tall and weighs {3}lbs. Don't fuck with him.", eagle.name, eagle.birthDate, eagle.height, eagle.weight);
             // Console.WriteLine("I have a bonobo named {0}. He was born on {1}. He is {2}ft tall and weighs {3}lbs. Don't fuck with him.", bonobo.name, bonobo.birthDate, bonobo.height, bonobo.weight);
             // Console.WriteLine("I have an red panda named {0}. He was born on {1}. He is {2}ft tall and weighs {3}lbs. Don't fuck with him.", redPanda.name, redPanda.birthDate, redPanda.height, redPanda.weight);
